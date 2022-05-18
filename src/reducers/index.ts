@@ -1,24 +1,19 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { getSampleData } from "../api";
+import { getSensorData } from "../api";
+import { SensorData } from "../api/types";
 import { RootState } from "../store";
 
-const initialState: string[] = [];
+const initialState: SensorData[] = [];
 
-const sampleSlice = createSlice({
-  name: "sample",
+const sensorsSlice = createSlice({
+  name: "sensors",
   initialState,
-  reducers: {
-    sampleAction: (state, action) => {
-      state[0] = action.payload
-    }
-  },
+  reducers: {},
   extraReducers: (builder) => {
-    builder.addCase(getSampleData.fulfilled, (_, action) => action.payload)
+    builder.addCase(getSensorData.fulfilled, (_, action) => action.payload)
   },
 });
 
-export const { sampleAction } = sampleSlice.actions
+export const selectRoot = (state: RootState) => state.sensors
 
-export const selectRoot = (state: RootState) => state.sample
-
-export default sampleSlice.reducer
+export default sensorsSlice.reducer

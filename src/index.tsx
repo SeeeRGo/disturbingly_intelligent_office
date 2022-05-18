@@ -1,14 +1,14 @@
 import React, { useEffect } from "react";
-import { getSampleData } from "./api";
-import { SampleList } from "./components/SampleList";
+import { getSensorData } from "./api";
+import { SensorData } from "./components/SensorData";
 import { useAppDispatch } from "./hooks";
 
 export const App = () => {
   const dispatch = useAppDispatch();
   useEffect(() => {
-    dispatch(getSampleData());
+    dispatch(getSensorData());
   }, [dispatch])
   return (
-    <SampleList />
+    <SensorData />
   );
 };
