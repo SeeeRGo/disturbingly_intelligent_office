@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import sensors from './reducers';
+import sensors from 'reducers';
 
 export const store = configureStore({
   reducer: {

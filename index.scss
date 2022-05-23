@@ -1,0 +1,42 @@
+.list {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 350px;
+}
+
+.barChart-item {
+    top: 5;
+    right: 30;
+    left: 20;
+    bottom: 5
+}
+
+.tooltip-root {
+    width: 100px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 16px
+}
+
+.tooltip-title {
+    color: #14342B;
+    padding: 10px 0px;
+}
+
+.tooltip-amount {
+    color: #73937E;
+}
+
+.tooltip-percent {
+    color: #5B2E48;
+}
