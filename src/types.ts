@@ -5,6 +5,6 @@ export interface IAdaptItem extends SensorData {
 }
 
 export interface ICountPercent {
-    totalValue: number,
-    partialValue: number
+    total: number,
+    amount: number
 }

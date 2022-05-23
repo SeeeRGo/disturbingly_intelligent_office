@@ -1,8 +1,15 @@
 .list {
     display: flex;
-    gap: 50px;
-    flex-wrap: wrap;
+    gap: 30px;
     padding: 50px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 500;
+    color: #785964;
 }
 
 .list-item {
@@ -31,6 +38,7 @@
 .tooltip-title {
     color: #14342B;
     padding: 10px 0px;
+    font-weight: 700;
 }
 
 .tooltip-amount {

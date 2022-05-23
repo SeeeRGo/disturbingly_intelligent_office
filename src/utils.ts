@@ -1,11 +1,12 @@
 import { IAdaptItem, ICountPercent } from "types";
 
 export const countPercent = ({
-    totalValue,
-    partialValue
+    total,
+    amount
 }: ICountPercent) => {
-    return `${Math.round((100 * partialValue) / totalValue)}%`;
+    return `${Math.round((100 * amount) / total)}%`;
 }
+
 
 export const adaptItem = (value: IAdaptItem[]) => {
     const adaptValue = value[0];
