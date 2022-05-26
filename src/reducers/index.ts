@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { getSensorData } from "../api";
-import { SensorData } from "../api/types";
-import { RootState } from "../store";
+import { getSensorData } from "api";
+import { SensorData } from "api/types";
+import { RootState } from "store";
 
 const initialState: SensorData[] = [];
 

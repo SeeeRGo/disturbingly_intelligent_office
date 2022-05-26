@@ -1,0 +1,51 @@
+.list {
+    display: flex;
+    gap: 30px;
+    padding: 50px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 500;
+    color: #785964;
+}
+
+.list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 350px;
+}
+
+.barChart-item {
+    top: 5;
+    right: 30;
+    left: 20;
+    bottom: 5
+}
+
+.tooltip-root {
+    width: 100px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 2px 10px,
+}
+
+.tooltip-title {
+    color: #14342B;
+    padding: 10px 0px;
+    font-weight: 700;
+}
+
+.tooltip-amount {
+    color: #73937E;
+}
+
+.tooltip-percent {
+    color: #5B2E48;
+}

@@ -19,6 +19,9 @@
     "strict": true,
     "sourceMap": true,
     "target": "esnext",
+    "baseUrl": "./src",
   },
-  // "include": ["src/**/*", "index.tsx"],
+  "include": [
+    "./src",
+  ]
 }
